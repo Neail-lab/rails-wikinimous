@@ -1,0 +1,9 @@
+<div class="container w-50 text-center">
+  <h1>Wiki</h1>
+  <ul class="list-group">
+    <% @articles.each do |a| %>
+      <li class="list-group-item list"> <%= link_to a.title, article_path(a) %> </li>
+    <% end %>
+  </ul>
+  <%= link_to "Crée un article", new_article_path(), class:"btn btn-primary mt-3" %>
+</div>

@@ -1,0 +1,5 @@
+<h1><%= @article.title %></h1>
+<p><%= @article.content %></p>
+<%= link_to "Voir les articles", articles_path(), class:"btn btn-primary mt-3" %>
+<%= link_to "Modifier l'article", edit_article_path(@article), class:"btn btn-primary mt-3" %>
+<%= link_to "Supprimer l'article", article_path(@article), data: { turbo_method: :delete, turbo_confirm: "Vous êtes sur ?" }, class:"btn btn-primary mt-3" %>

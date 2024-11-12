@@ -1,0 +1,8 @@
+<h1>EDIT</h1>
+<%= form_with model: @article do |t| %>
+  <%= t.label :title, "Titre ?" %>
+  <%= t.text_field :title %>
+  <%= t.label :content, "Description ?" %>
+  <%= t.text_field :content %>
+  <%= t.submit %>
+<% end %>
